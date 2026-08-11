@@ -1,121 +1,11 @@
-﻿
-<!doctype html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8">
+<!-- Dashboard embebible para Systeme.io -->
+<div class="ec-systeme-dashboard">
+<div id="systeme-head" style="display:none;">
+		
 		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<title>Certificación en Copywriting &#8211; Escuela de Copywriting</title>
-<script type="text/html" id="tmpl-bb-link-preview">
-<% if ( link_scrapping ) { %>
-	<% if ( link_loading ) { %>
-		<span class="bb-url-scrapper-loading bb-ajax-loader"><i class="bb-icon-l bb-icon-spinner animate-spin"></i>Loading preview...</span>
-	<% } %>
-	<% if ( link_success || link_error ) { %>
-		<a title="Cancel Preview" href="#" id="bb-close-link-suggestion">Remove Preview</a>
-		<div class="bb-link-preview-container">
+		
 
-			<% if ( link_images && link_images.length && link_success && ! link_error && '' !== link_image_index ) { %>
-				<div id="bb-url-scrapper-img-holder">
-					<div class="bb-link-preview-image">
-						<div class="bb-link-preview-image-cover">
-							<img src="<%= link_images[link_image_index] %>"/>
-						</div>
-						<div class="bb-link-preview-icons">
-							<%
-							if ( link_images.length > 1 ) { %>
-								<a data-bp-tooltip-pos="up" data-bp-tooltip="Change image" href="#" class="icon-exchange toolbar-button bp-tooltip" id="icon-exchange"><i class="bb-icon-l bb-icon-exchange"></i></a>
-							<% } %>
-							<% if ( link_images.length ) { %>
-								<a data-bp-tooltip-pos="up" data-bp-tooltip="Remove image" href="#" class="icon-image-slash toolbar-button bp-tooltip" id="bb-link-preview-remove-image"><i class="bb-icon-l bb-icon-image-slash"></i></a>
-							<% } %>
-							<a data-bp-tooltip-pos="up" data-bp-tooltip="Confirm" class="toolbar-button bp-tooltip" href="#" id="bb-link-preview-select-image">
-								<i class="bb-icon-check bb-icon-l"></i>
-							</a>
-						</div>
-					</div>
-					<% if ( link_images.length > 1 ) { %>
-						<div class="bb-url-thumb-nav">
-							<button type="button" id="bb-url-prevPicButton"><span class="bb-icon-l bb-icon-angle-left"></span></button>
-							<button type="button" id="bb-url-nextPicButton"><span class="bb-icon-l bb-icon-angle-right"></span></button>
-							<div id="bb-url-scrapper-img-count">
-								Image <%= link_image_index + 1 %>&nbsp;of&nbsp;<%= link_images.length %>
-							</div>
-						</div>
-					<% } %>
-				</div>
-			<% } %>
 
-			<% if ( link_success && ! link_error && link_url ) { %>
-				<div class="bb-link-preview-info">
-					<% var a = document.createElement('a');
-						a.href = link_url;
-						var hostname = a.hostname;
-						var domainName = hostname.replace('www.', '' );
-					%>
-
-					<% if ( 'undefined' !== typeof link_title && link_title.trim() && link_description ) { %>
-						<p class="bb-link-preview-link-name"><%= domainName %></p>
-					<% } %>
-
-					<% if ( link_success && ! link_error ) { %>
-						<p class="bb-link-preview-title"><%= link_title %></p>
-					<% } %>
-
-					<% if ( link_success && ! link_error ) { %>
-						<div class="bb-link-preview-excerpt"><p><%= link_description %></p></div>
-					<% } %>
-				</div>
-			<% } %>
-			<% if ( link_error && ! link_success ) { %>
-				<div id="bb-url-error" class="bb-url-error"><%= link_error_msg %></div>
-			<% } %>
-		</div>
-	<% } %>
-<% } %>
-</script>
-<script type="text/html" id="tmpl-profile-card-popup">
-	<div id="profile-card" class="bb-profile-card bb-popup-card" data-bp-item-id="" data-bp-item-component="members">
-
-		<div class="skeleton-card">
-			<div class="skeleton-card-body">
-				<div class="skeleton-card-avatar bb-loading-bg"></div>
-				<div class="skeleton-card-entity">
-					<div class="skeleton-card-type bb-loading-bg"></div>
-					<div class="skeleton-card-heading bb-loading-bg"></div>
-					<div class="skeleton-card-meta bb-loading-bg"></div>
-				</div>
-			</div>
-						<div class="skeleton-card-footer ">
-				<div class="skeleton-card-button bb-loading-bg"></div>
-				<div class="skeleton-card-button bb-loading-bg"></div>
-				<div class="skeleton-card-button bb-loading-bg"></div>
-			</div>
-		</div>
-
-		<div class="bb-card-content">
-			<div class="bb-card-body">
-				<div class="bb-card-avatar">
-					<span class="card-profile-status"></span>
-					<img src="" alt="">
-				</div>
-				<div class="bb-card-entity">
-					<div class="bb-card-profile-type"></div>
-					<h4 class="bb-card-heading"></h4>
-					<div class="bb-card-meta">
-						<span class="card-meta-item card-meta-joined">Joined <span></span></span>
-						<span class="card-meta-item card-meta-last-active"></span>
-											</div>
-				</div>
-			</div>
-			<div class="bb-card-footer">
-								<div class="bb-card-action bb-card-action-outline">
-					<a href="" class="card-button card-button-profile">View Profile</a>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</script>
 
             <style id="bb_learndash_30_custom_colors">
 
@@ -234,7 +124,7 @@
                 
             </style>
 
-			<meta name='robots' content='noindex, nofollow'>
+			
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
@@ -571,7 +461,7 @@ var bbemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0
 <script type="text/javascript" src="../../wp-content/plugins/ld-content-cloner/public/js/ld-content-cloner-public.js?ver=1.0.0" id="ld-content-cloner-js"></script>
 <script type="text/javascript" src="../../wp-content/themes/buddyboss-theme-child/assets/js/custom.js?ver=1.0.0" id="buddyboss-child-js-js"></script>
 <link rel="https://api.w.org/" href="../../wp-json/index.htm"><link rel="alternate" title="JSON" type="application/json" href="https://cursos.escueladecopywriting.com/wp-json/wp/v2/sfwd-courses/14054"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php?rsd">
-<meta name="generator" content="WordPress 6.8.7">
+
 <link rel="canonical" href="index.htm">
 <link rel='shortlink' href='https://cursos.escueladecopywriting.com/?p=14054'>
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcursos.escueladecopywriting.com%2Fcurso%2Fcertificacion-en-copywriting%2F">
@@ -612,9 +502,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TWP97S5');
 </script>
-<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta name="generator" content="Redux 4.4.11"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">                <style type="text/css">
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->                <style type="text/css">
                     @font-face { font-family: Karla; src: url(../../wp-content/uploads/2021/04/Karla-VariableFont_wght.ttf) format('truetype'); font-weight: 700; font-style: normal; font-display: swap; } @font-face { font-family: Karla; src: url(../../wp-content/uploads/2021/04/Karla-VariableFont_wght-1.ttf) format('truetype'); font-weight: 400; font-style: normal; font-display: swap; } @font-face { font-family: Zuume; src: url(../../wp-content/uploads/2021/04/Zuume-Regular.ttf) format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }                </style>
-				<meta name="generator" content="Elementor 3.33.0; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+				
 
 		<style type="text/css" media="screen">
 			.noty_theme__learndash.noty_type__success {
@@ -651,7 +541,7 @@ $('.elementor-tab-title').removeClass('elementor-active');
 </script><link rel="icon" href="../../wp-content/uploads/2021/02/cropped-favicon_ecw_2-32x32.png" sizes="32x32">
 <link rel="icon" href="../../wp-content/uploads/2021/02/cropped-favicon_ecw_2-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="../../wp-content/uploads/2021/02/cropped-favicon_ecw_2-180x180.png">
-<meta name="msapplication-TileImage" content="https://cursos.escueladecopywriting.com/wp-content/uploads/2021/02/cropped-favicon_ecw_2-270x270.png">
+
 <style id="buddyboss_theme-style">:root{--bb-primary-color:#0000FF;--bb-primary-color-rgb:0, 0, 255;--bb-body-background-color:#FAFBFD;--bb-body-background-color-rgb:250, 251, 253;--bb-content-background-color:#FFFFFF;--bb-content-alternate-background-color:#FBFBFC;--bb-content-border-color:#E7E9EC;--bb-content-border-color-rgb:231, 233, 236;--bb-cover-image-background-color:#0000FF;--bb-headings-color:#122B46;--bb-headings-color-rgb:18, 43, 70;--bb-body-text-color:#000000;--bb-body-text-color-rgb:0, 0, 0;--bb-alternate-text-color:#A3A5A9;--bb-alternate-text-color-rgb:163, 165, 169;--bb-primary-button-background-regular:#385DFF;--bb-primary-button-background-hover:#1E42DD;--bb-primary-button-border-regular:#385DFF;--bb-primary-button-border-hover:#1E42DD;--bb-primary-button-text-regular:#FFFFFF;--bb-primary-button-text-regular-rgb:255, 255, 255;--bb-primary-button-text-hover:#FFFFFF;--bb-primary-button-text-hover-rgb:255, 255, 255;--bb-secondary-button-background-regular:#F2F4F5;--bb-secondary-button-background-hover:#385DFF;--bb-secondary-button-border-regular:#F2F4F5;--bb-secondary-button-border-hover:#385DFF;--bb-secondary-button-text-regular:#1E2132;--bb-secondary-button-text-hover:#FFFFFF;--bb-header-background:#FFFFFF;--bb-header-alternate-background:#F2F4F5;--bb-header-links:#939597;--bb-header-links-hover:#0000FF;--bb-header-mobile-logo-size:px;--bb-header-height:76px;--bb-sidenav-background:#FFFFFF;--bb-sidenav-text-regular:#0000FF;--bb-sidenav-text-hover:#0000FF;--bb-sidenav-text-active:#FFFFFF;--bb-sidenav-menu-background-color-regular:#FFFFFF;--bb-sidenav-menu-background-color-hover:#F2F4F5;--bb-sidenav-menu-background-color-active:#0000FF;--bb-sidenav-count-text-color-regular:#0000FF;--bb-sidenav-count-text-color-hover:#FFFFFF;--bb-sidenav-count-text-color-active:#0000FF;--bb-sidenav-count-background-color-regular:#F2F4F5;--bb-sidenav-count-background-color-hover:#0000FF;--bb-sidenav-count-background-color-active:#FFFFFF;--bb-footer-background:#FFFFFF;--bb-footer-widget-background:#FFFFFF;--bb-footer-text-color:#5A5A5A;--bb-footer-menu-link-color-regular:#5A5A5A;--bb-footer-menu-link-color-hover:#385DFF;--bb-footer-menu-link-color-active:#1E2132;--bb-admin-screen-bgr-color:#FAFBFD;--bb-admin-screen-txt-color:#122B46;--bb-login-register-link-color-regular:#5A5A5A;--bb-login-register-link-color-hover:#1E42DD;--bb-login-register-button-background-color-regular:#385DFF;--bb-login-register-button-background-color-hover:#1E42DD;--bb-login-register-button-border-color-regular:#385DFF;--bb-login-register-button-border-color-hover:#1E42DD;--bb-login-register-button-text-color-regular:#FFFFFF;--bb-login-register-button-text-color-hover:#FFFFFF;--bb-label-background-color:#D7DFFF;--bb-label-text-color:#385DFF;--bb-tooltip-background:#122B46;--bb-tooltip-background-rgb:18, 43, 70;--bb-tooltip-color:#FFFFFF;--bb-default-notice-color:#0000FF;--bb-default-notice-color-rgb:0, 0, 255;--bb-success-color:#1CD991;--bb-success-color-rgb:28, 217, 145;--bb-warning-color:#F7BA45;--bb-warning-color-rgb:247, 186, 69;--bb-danger-color:#EF3E46;--bb-danger-color-rgb:239, 62, 70;--bb-login-custom-heading-color:#FFFFFF;--bb-button-radius:100px;--bb-block-radius:4px;--bb-option-radius:3px;--bb-block-radius-inner:4px;--bb-input-radius:4px;--bb-checkbox-radius:2.7px;--bb-primary-button-focus-shadow:none;--bb-secondary-button-focus-shadow:none;--bb-outline-button-focus-shadow:none;--bb-input-focus-shadow:none;--bb-input-focus-border-color:var(--bb-content-border-color);--bb-label-type-radius:100px;--bb-widget-title-text-transform:uppercase;}h1 { line-height:1.2; }h2 { line-height:1.2; }h3 { line-height:1.2; }h4 { line-height:1.4; }h5 { line-height:1.4; }h6 { line-height:1.4; }.bb-style-primary-bgr-color {background-color:#0000FF;}.bb-style-border-radius {border-radius:100px;}.site-header-container #site-logo .bb-logo img,.site-header-container #site-logo .site-title img.bb-logo,.site-title img.bb-mobile-logo {max-height:76px}.sticky-header .site-content,body.buddypress.sticky-header .site-content,.bb-buddypanel.sticky-header .site-content,.single-sfwd-quiz.bb-buddypanel.sticky-header .site-content,.single-sfwd-lessons.bb-buddypanel.sticky-header .site-content,.single-sfwd-topic.bb-buddypanel.sticky-header .site-content {padding-top:76px}.site-header .site-header-container,.header-search-wrap,.header-search-wrap input.search-field,.header-search-wrap form.search-form {height:76px;}.sticky-header .bp-feedback.bp-sitewide-notice {top:76px;}@media screen and (max-width:767px) {.bb-mobile-header {height:76px;}#learndash-content .lms-topic-sidebar-wrapper .lms-topic-sidebar-data,.lifter-topic-sidebar-wrapper .lifter-topic-sidebar-data {height:calc(90vh - 76px);}}[data-balloon]:after,[data-bp-tooltip]:after {background-color:rgba( 18,43,70,1 );box-shadow:none;}[data-balloon]:before,[data-bp-tooltip]:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(0)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="right"]:before,[data-balloon][data-balloon-pos='right']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(90 6 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="left"]:before,[data-balloon][data-balloon-pos='left']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(-90 18 18)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}[data-bp-tooltip][data-bp-tooltip-pos="down-left"]:before,[data-bp-tooltip][data-bp-tooltip-pos="down"]:before,[data-balloon][data-balloon-pos='down']:before {background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(180 18 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto;}</style>
             <style id="buddyboss_theme-bp-style">
                 #buddypress #header-cover-image.has-default,#buddypress #header-cover-image.has-default .guillotine-window img,.bs-group-cover.has-default a {background-color:#0000FF;}body.buddypress.register.login-split-page .login-split .split-overlay,body.buddypress.activation.login-split-page .login-split .split-overlay {opacity:0.3;}body.buddypress.register .register-section-logo img,body.buddypress.activation .activate-section-logo img {width:145px;}
@@ -818,9 +708,9 @@ font-size:17px;}
 
 		</style>
 		<style id="buddyboss_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">.site-header .site-title{font-family:Karla;font-weight:normal;font-style:normal;font-size:30px;font-display:swap;}body{font-family:Karla;font-weight:normal;font-style:normal;font-size:16px;font-display:swap;}h1{font-family:Karla;font-weight:400;font-style:normal;font-size:34px;font-display:swap;}h2{font-family:Karla;font-weight:normal;font-style:normal;font-size:24px;font-display:swap;}h3{font-family:Zuume;font-weight:normal;font-style:normal;font-size:35px;font-display:swap;}h4{font-family:Karla;font-weight:400;font-style:normal;font-size:18px;font-display:swap;}h5{font-family:Karla;font-weight:400;font-style:normal;font-size:16px;font-display:swap;}h6{font-family:Karla;font-weight:normal;font-style:normal;font-size:12px;font-display:swap;}</style>
-	</head>
+	</div>
 
-	<body class="bp-nouveau wp-singular sfwd-courses-template-default single single-sfwd-courses postid-14054 logged-in wp-theme-buddyboss-theme wp-child-theme-buddyboss-theme-child buddyboss-theme bb-template-v1 bb-buddypanel bb-buddypanel-left buddypanel-open buddypanel-logo-off default-fi  header-style-1  menu-style-standard sticky-header elementor-default elementor-kit-19148 no-js learndash-cpt learndash-cpt-sfwd-courses learndash-template-ld30 learndash-embed-responsive learndash-theme">
+	<div id="systeme-body">
 
         
 		<aside class="buddypanel buddypanel--toggle-on">
@@ -4052,5 +3942,5 @@ window.learndash.global = Object.assign(window.learndash.global || {}, {"ajax_ur
 
   gtag('config', 'G-15YY8BN0T8');
 </script>
-</body>
-</html>
+</div>
+</div>
