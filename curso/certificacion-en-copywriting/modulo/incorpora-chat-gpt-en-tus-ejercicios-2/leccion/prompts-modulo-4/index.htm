@@ -4165,5 +4165,27 @@ window.learndash.global = Object.assign(window.learndash.global || {}, {"ajax_ur
 
   gtag('config', 'G-15YY8BN0T8');
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var toggleBtn = document.querySelector('.bb-toggle-panel');
+    var body = document.body;
+    
+    // Restore state on load
+    if (localStorage.getItem('sidebar_collapsed') === 'true') {
+        body.classList.remove('buddypanel-open');
+    }
+    
+    // Listen for clicks on the toggle button
+    if(toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+            setTimeout(function() {
+                var isExpanded = body.classList.contains('buddypanel-open');
+                localStorage.setItem('sidebar_collapsed', !isExpanded);
+            }, 100);
+        });
+    }
+});
+</script>
 </body>
 </html>
