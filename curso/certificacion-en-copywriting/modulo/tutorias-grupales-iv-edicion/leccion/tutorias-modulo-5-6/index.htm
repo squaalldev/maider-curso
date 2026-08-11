@@ -8,7 +8,7 @@
 <script type="text/html" id="tmpl-bb-link-preview">
 <% if ( link_scrapping ) { %>
 	<% if ( link_loading ) { %>
-		<span class="bb-url-scrapper-loading bb-ajax-loader"><i class="bb-icon-l bb-icon-spinner animate-spin"></i>Loading preview...</span>
+		<span class="bb-url-scrapper-loading bb-ajax-loader"><i class="fab fa-linkedin-in fas fa-spinner animate-spin"></i>Loading preview...</span>
 	<% } %>
 	<% if ( link_success || link_error ) { %>
 		<a title="Cancel Preview" href="#" id="bb-close-link-suggestion">Remove Preview</a>
@@ -23,20 +23,20 @@
 						<div class="bb-link-preview-icons">
 							<%
 							if ( link_images.length > 1 ) { %>
-								<a data-bp-tooltip-pos="up" data-bp-tooltip="Change image" href="#" class="icon-exchange toolbar-button bp-tooltip" id="icon-exchange"><i class="bb-icon-l bb-icon-exchange"></i></a>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Change image" href="#" class="icon-exchange toolbar-button bp-tooltip" id="icon-exchange"><i class="fab fa-linkedin-in fas fa-exchange-alt"></i></a>
 							<% } %>
 							<% if ( link_images.length ) { %>
-								<a data-bp-tooltip-pos="up" data-bp-tooltip="Remove image" href="#" class="icon-image-slash toolbar-button bp-tooltip" id="bb-link-preview-remove-image"><i class="bb-icon-l bb-icon-image-slash"></i></a>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Remove image" href="#" class="icon-image-slash toolbar-button bp-tooltip" id="bb-link-preview-remove-image"><i class="fab fa-linkedin-in fas fa-image"></i></a>
 							<% } %>
 							<a data-bp-tooltip-pos="up" data-bp-tooltip="Confirm" class="toolbar-button bp-tooltip" href="#" id="bb-link-preview-select-image">
-								<i class="bb-icon-check bb-icon-l"></i>
+								<i class="fas fa-check fab fa-linkedin-in"></i>
 							</a>
 						</div>
 					</div>
 					<% if ( link_images.length > 1 ) { %>
 						<div class="bb-url-thumb-nav">
-							<button type="button" id="bb-url-prevPicButton"><span class="bb-icon-l bb-icon-angle-left"></span></button>
-							<button type="button" id="bb-url-nextPicButton"><span class="bb-icon-l bb-icon-angle-right"></span></button>
+							<button type="button" id="bb-url-prevPicButton"><span class="fab fa-linkedin-in fas fa-angle-left"></span></button>
+							<button type="button" id="bb-url-nextPicButton"><span class="fab fa-linkedin-in fas fa-angle-right"></span></button>
 							<div id="bb-url-scrapper-img-count">
 								Image <%= link_image_index + 1 %>&nbsp;of&nbsp;<%= link_images.length %>
 							</div>
@@ -254,7 +254,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel='stylesheet' id='mp-theme-css' href='../../../../../../wp-content/plugins/memberpress/css/ui/theme.css?ver=1.12.10' type='text/css' media='all'>
 <link rel='stylesheet' id='bp-nouveau-icons-map-css' href='../../../../../../wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/icons/css/icons-map.min.css?ver=2.15.1' type='text/css' media='all'>
 <link rel='stylesheet' id='bp-nouveau-bb-icons-css' href='../../../../../../wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/icons/css/bb-icons.min.css?ver=1.0.8' type='text/css' media='all'>
-<link rel='stylesheet' id='dashicons-css' href='../../../../../../wp-includes/css/dashicons.min.css?ver=6.8.7' type='text/css' media='all'>
+<link rel='stylesheet' id='fab fa-css3' href='../../../../../../wp-includes/css/dashicons.min.css?ver=6.8.7' type='text/css' media='all'>
 <link rel='stylesheet' id='bp-nouveau-css' href='../../../../../../wp-content/plugins/buddyboss-platform/bp-templates/bp-nouveau/css/buddypress.min.css?ver=2.15.1' type='text/css' media='all'>
 <style id='bp-nouveau-inline-css' type='text/css'>
 .list-wrap .bs-group-cover a:before{ background:unset; }
@@ -792,7 +792,7 @@ font-size:17px;}
 	display:none;
 }
 /*otros cursos*/
-.bb-icon-shopping-cart{
+.fas fa-shopping-cart{
 	display:none !important;
 }
 .widget_product_categories li{
@@ -829,7 +829,8 @@ font-size:17px;}
 
 		</style>
 		<style id="buddyboss_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">.site-header .site-title{font-family:Karla;font-weight:normal;font-style:normal;font-size:30px;font-display:swap;}body{font-family:Karla;font-weight:normal;font-style:normal;font-size:16px;font-display:swap;}h1{font-family:Karla;font-weight:400;font-style:normal;font-size:34px;font-display:swap;}h2{font-family:Karla;font-weight:normal;font-style:normal;font-size:24px;font-display:swap;}h3{font-family:Zuume;font-weight:normal;font-style:normal;font-size:35px;font-display:swap;}h4{font-family:Karla;font-weight:400;font-style:normal;font-size:18px;font-display:swap;}h5{font-family:Karla;font-weight:400;font-style:normal;font-size:16px;font-display:swap;}h6{font-family:Karla;font-weight:normal;font-style:normal;font-size:12px;font-display:swap;}</style>
-	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
 
 	<body class="bp-nouveau wp-singular sfwd-topic-template-default single single-sfwd-topic postid-25082 logged-in wp-theme-buddyboss-theme wp-child-theme-buddyboss-theme-child has-notepad buddyboss-theme bb-template-v1 bb-buddypanel bb-buddypanel-left buddypanel-open buddypanel-logo-off bb-sfwd-aside default-fi  header-style-1  menu-style-standard sticky-header has-sidebar sfwd-sidebar sfwd-single-sidebar-left bb-custom-ld-logo-enabled ld-in-focus-mode elementor-default elementor-kit-19148 no-js learndash-cpt learndash-cpt-sfwd-topic learndash-template-ld30 learndash-cpt-sfwd-topic-25082-current learndash-cpt-sfwd-courses-14054-parent learndash-cpt-sfwd-lessons-25067-parent learndash-embed-responsive bb-custom-ld-focus-mode-enabled learndash-theme">
 
@@ -837,7 +838,7 @@ font-size:17px;}
 		<aside class="buddypanel buddypanel--toggle-on">
 			<header class="panel-head">
 			<a href="#" class="bb-toggle-panel">
-				<i class="bb-icon-l bb-icon-sidebar"></i>
+				<i class="fab fa-linkedin-in fas fa-columns"></i>
 				<span class="screen-reader-text">Toggle Side Panel</span>
 			</a>
 		</header>
@@ -848,14 +849,14 @@ font-size:17px;}
 		</div>
 			<div class="side-panel-inner">
 		<div class="side-panel-menu-container">
-			<ul id="buddypanel-menu" class="buddypanel-menu side-panel-menu"><li id="menu-item-1701" class="fas fa-user menu-item menu-item-type-post_type menu-item-object-page menu-item-1701"><a href="https://cursos.escueladecopywriting.com/mi-cuenta/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Mi cuenta" aria-label="Mi cuenta"><i class="_mi _before bb-icon-l buddyboss bb-icon-user-alt" aria-hidden="true"></i><span>Mi cuenta</span></a></li>
-<li id="menu-item-1704" class="fas fa-graduation-cap menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1704"><a href="https://cursos.escueladecopywriting.com/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Mis cursos" aria-label="Mis cursos"><i class="_mi _before bb-icon-l buddyboss bb-icon-book-open" aria-hidden="true"></i><span>Mis cursos</span></a></li>
-<li id="menu-item-21299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21299"><a href="https://cursos.escueladecopywriting.com/cuaderno-de-notas/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Cuaderno de notas" aria-label="Cuaderno de notas"><i class="_mi _before bb-icon-l buddyboss bb-icon-pencil" aria-hidden="true"></i><span>Cuaderno de notas</span></a></li>
-<li id="menu-item-21301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21301"><a href="https://cursos.escueladecopywriting.com/glosario/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Glosario" aria-label="Glosario"><i class="_mi _before bb-icon-l buddyboss bb-icon-file-txt" aria-hidden="true"></i><span>Glosario</span></a></li>
-<li id="menu-item-21302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21302"><a href="https://cursos.escueladecopywriting.com/bibliografia-para-todos-los-alumnos/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Bibliografía" aria-label="Bibliografía"><i class="_mi _before bb-icon-l buddyboss bb-icon-bookmark" aria-hidden="true"></i><span>Bibliografía</span></a></li>
-<li id="menu-item-21303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21303"><a href="https://cursos.escueladecopywriting.com/otros-cursos-de-la-escuela/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Otros cursos" aria-label="Otros cursos"><i class="_mi _before bb-icon-l buddyboss bb-icon-book" aria-hidden="true"></i><span>Otros cursos</span></a></li>
-<li id="menu-item-21304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21304"><a href="https://cursos.escueladecopywriting.com/preguntas-frecuentes/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Preguntas frecuentes" aria-label="Preguntas frecuentes"><i class="_mi _before bb-icon-l buddyboss bb-icon-alert-question" aria-hidden="true"></i><span>Preguntas frecuentes</span></a></li>
-<li id="menu-item-1717" class="fa-question-circle menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"><a href="https://cursos.escueladecopywriting.com/soporte-academico/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Soporte académico" aria-label="Soporte académico"><i class="_mi _before bb-icon-l buddyboss bb-icon-chat" aria-hidden="true"></i><span>Soporte académico</span></a></li>
+			<ul id="buddypanel-menu" class="buddypanel-menu side-panel-menu"><li id="menu-item-1701" class="fas fa-user menu-item menu-item-type-post_type menu-item-object-page menu-item-1701"><a href="https://cursos.escueladecopywriting.com/mi-cuenta/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Mi cuenta" aria-label="Mi cuenta"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-user-alt" aria-hidden="true"></i><span>Mi cuenta</span></a></li>
+<li id="menu-item-1704" class="fas fa-graduation-cap menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1704"><a href="https://cursos.escueladecopywriting.com/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Mis cursos" aria-label="Mis cursos"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-book-open" aria-hidden="true"></i><span>Mis cursos</span></a></li>
+<li id="menu-item-21299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21299"><a href="https://cursos.escueladecopywriting.com/cuaderno-de-notas/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Cuaderno de notas" aria-label="Cuaderno de notas"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-pencil-alt" aria-hidden="true"></i><span>Cuaderno de notas</span></a></li>
+<li id="menu-item-21301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21301"><a href="https://cursos.escueladecopywriting.com/glosario/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Glosario" aria-label="Glosario"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-file-txt" aria-hidden="true"></i><span>Glosario</span></a></li>
+<li id="menu-item-21302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21302"><a href="https://cursos.escueladecopywriting.com/bibliografia-para-todos-los-alumnos/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Bibliografía" aria-label="Bibliografía"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-bookmark" aria-hidden="true"></i><span>Bibliografía</span></a></li>
+<li id="menu-item-21303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21303"><a href="https://cursos.escueladecopywriting.com/otros-cursos-de-la-escuela/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Otros cursos" aria-label="Otros cursos"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-book" aria-hidden="true"></i><span>Otros cursos</span></a></li>
+<li id="menu-item-21304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21304"><a href="https://cursos.escueladecopywriting.com/preguntas-frecuentes/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Preguntas frecuentes" aria-label="Preguntas frecuentes"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-question-circle" aria-hidden="true"></i><span>Preguntas frecuentes</span></a></li>
+<li id="menu-item-1717" class="fa-question-circle menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"><a href="https://cursos.escueladecopywriting.com/soporte-academico/" class="bb-menu-item" data-balloon-pos="right" data-balloon="Soporte académico" aria-label="Soporte académico"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-comments" aria-hidden="true"></i><span>Soporte académico</span></a></li>
 </ul>		</div>
 	</div>
 </aside>
@@ -867,7 +868,7 @@ font-size:17px;}
 			<header id="masthead" class="site-header site-header--bb">
 				<div class="container site-header-container flex default-header">
 	<a href="#" class="bb-toggle-panel">
-		<i class="bb-icon-l bb-icon-sidebar"></i>
+		<i class="fab fa-linkedin-in fas fa-columns"></i>
 		<span class="screen-reader-text">Toggle Side Panel</span>
 	</a>
             <div id="site-logo" class="site-branding">
@@ -880,11 +881,11 @@ font-size:17px;}
 	<div class="header-aside-inner">
 
 					<a href="#" id="bb-toggle-theme" aria-label="Toggle theme">
-				<span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="Dark Mode"><i class="bb-icon-rl bb-icon-moon"></i></span>
-				<span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="Light Mode"><i class="bb-icon-l bb-icon-sun"></i></span>
+				<span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="Dark Mode"><i class="-rl -moon"></i></span>
+				<span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="Light Mode"><i class="fab fa-linkedin-in -sun"></i></span>
 			</a>
-			<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="Maximize" aria-label="Maximize"><i class="bb-icon-l bb-icon-expand"></i></a>
-			<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="Minimize" aria-label="Minimize"><i class="bb-icon-l bb-icon-merge"></i></a>
+			<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="Maximize" aria-label="Maximize"><i class="fab fa-linkedin-in -expand"></i></a>
+			<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="Minimize" aria-label="Minimize"><i class="fab fa-linkedin-in -merge"></i></a>
 
 							<div class="user-wrap user-wrap-container menu-item-has-children">
 					
@@ -914,7 +915,7 @@ font-size:17px;}
 <div class="bb-mobile-header-wrapper ">
 	<div class="bb-mobile-header flex align-items-center">
 		<div class="bb-left-panel-icon-wrap">
-			<a href="#" class="push-left bb-left-panel-mobile" aria-label="Open Menu"><i class="bb-icon-l bb-icon-bars"></i></a>
+			<a href="#" class="push-left bb-left-panel-mobile" aria-label="Open Menu"><i class="fab fa-linkedin-in fas fa-bars"></i></a>
 		</div>
 
 		<div class="flex-1 mobile-logo-wrapper">
@@ -929,11 +930,11 @@ font-size:17px;}
 		</div>
 		<div class="header-aside">
 												<a href="#" id="bb-toggle-theme" aria-label="Toggle theme">
-						<span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="Dark Mode"><i class="bb-icon-rl bb-icon-moon"></i></span>
-						<span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="Light Mode"><i class="bb-icon-l bb-icon-sun"></i></span>
+						<span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="Dark Mode"><i class="-rl -moon"></i></span>
+						<span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="Light Mode"><i class="fab fa-linkedin-in -sun"></i></span>
 					</a>
-					<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="left" data-balloon="Hide Sidepanel" aria-label="Hide Sidepanel"><i class="bb-icon-l bb-icon-expand"></i></a>
-					<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="left" data-balloon="Show Sidepanel" aria-label="Show Sidepanel"><i class="bb-icon-l bb-icon-merge"></i></a>
+					<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="left" data-balloon="Hide Sidepanel" aria-label="Hide Sidepanel"><i class="fab fa-linkedin-in -expand"></i></a>
+					<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="left" data-balloon="Show Sidepanel" aria-label="Show Sidepanel"><i class="fab fa-linkedin-in -merge"></i></a>
 						</div>
 	</div>
 
@@ -946,7 +947,7 @@ font-size:17px;}
 		<input type="search" class="search-field-top" placeholder="Buscar" value="" name="s">
 	</label>
 </form>
-			<a data-balloon-pos="left" data-balloon="Close" href="#" class="close-search"><i class="bb-icon-l bb-icon-times"></i></a>
+			<a data-balloon-pos="left" data-balloon="Close" href="#" class="close-search"><i class="fab fa-linkedin-in fas fa-times"></i></a>
 		</div>
 	</div>
 </div>
@@ -962,23 +963,23 @@ font-size:17px;}
 						</a>
 											</div>
 				</div>
-						<a href="#" class="bb-close-panel" aria-label="Close Menu"><i class="bb-icon-l bb-icon-times"></i></a>
+						<a href="#" class="bb-close-panel" aria-label="Close Menu"><i class="fab fa-linkedin-in fas fa-times"></i></a>
 		</div>
 
 		<nav class="main-navigation" data-menu-space="120">
-			<ul id="menu-mobile" class="bb-primary-menu mobile-menu buddypanel-menu side-panel-menu"><li id="menu-item-30374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30374 bb-menu-section"><a><i class='bb-icon-file'></i><span class='link-text'>Mi cuenta</span></a></li>
-<li id="menu-item-30376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30376"><a href="https://cursos.escueladecopywriting.com/mi-cuenta/"><i class='bb-icon-file'></i><span class='link-text'>Mi cuenta</span></a></li>
-<li id="menu-item-30377" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30377"><a href="https://cursos.escueladecopywriting.com/"><i class='bb-icon-file'></i><span class='link-text'>Mis cursos</span></a></li>
-<li id="menu-item-30378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30378"><a href="https://cursos.escueladecopywriting.com/cuaderno-de-notas/"><i class='bb-icon-file'></i><span class='link-text'>Cuaderno de notas</span></a></li>
-<li id="menu-item-30375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30375"><a href="https://cursos.escueladecopywriting.com/glosario/"><i class='bb-icon-file'></i><span class='link-text'>Glosario</span></a></li>
-<li id="menu-item-30379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30379"><a href="https://cursos.escueladecopywriting.com/bibliografia-para-todos-los-alumnos/"><i class='bb-icon-file'></i><span class='link-text'>Bibliografía</span></a></li>
-<li id="menu-item-30380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30380"><a href="https://cursos.escueladecopywriting.com/otros-cursos-de-la-escuela/"><i class='bb-icon-file'></i><span class='link-text'>Otros cursos</span></a></li>
-<li id="menu-item-30381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30381"><a href="https://cursos.escueladecopywriting.com/preguntas-frecuentes/"><i class='bb-icon-file'></i><span class='link-text'>Preguntas frecuentes</span></a></li>
-<li id="menu-item-30382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30382"><a href="https://cursos.escueladecopywriting.com/soporte-academico/"><i class='bb-icon-file'></i><span class='link-text'>Soporte académico</span></a></li>
-<li id="menu-item-30373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30373 bb-menu-section"><a><i class='bb-icon-file'></i><span class='link-text'>Perfil</span></a></li>
-<li id="menu-item-30360" class="bp-menu bp-profile-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-30360"><a href="https://cursos.escueladecopywriting.com/miembros/jesus-cabrera/profile/"><i class="_mi _before bb-icon-l buddyboss bb-icon-user" aria-hidden="true"></i><span>Perfil</span></a></li>
-<li id="menu-item-30361" class="bp-menu bp-notifications-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-30361"><a href="https://cursos.escueladecopywriting.com/miembros/jesus-cabrera/notifications/"><i class="_mi _before bb-icon-l buddyboss bb-icon-bell" aria-hidden="true"></i><span>Notificaciones</span></a></li>
-<li id="menu-item-30362" class="bp-menu bp-logout-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-30362"><a href="https://cursos.escueladecopywriting.com/wp-login.php?action=logout&redirect_to=https%3A%2F%2Fcursos.escueladecopywriting.com%2Fcurso%2Fcertificacion-en-copywriting%2Fmodulo%2Ftutorias-grupales-iv-edicion%2Fleccion%2Ftutorias-modulo-5-6%2F&_wpnonce=ac033f1db0"><i class="_mi _before bb-icon-l buddyboss bb-icon-sign-out" aria-hidden="true"></i><span>Log Out</span></a></li>
+			<ul id="menu-mobile" class="bb-primary-menu mobile-menu buddypanel-menu side-panel-menu"><li id="menu-item-30374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30374 bb-menu-section"><a><i class='fas fa-file'></i><span class='link-text'>Mi cuenta</span></a></li>
+<li id="menu-item-30376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30376"><a href="https://cursos.escueladecopywriting.com/mi-cuenta/"><i class='fas fa-file'></i><span class='link-text'>Mi cuenta</span></a></li>
+<li id="menu-item-30377" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30377"><a href="https://cursos.escueladecopywriting.com/"><i class='fas fa-file'></i><span class='link-text'>Mis cursos</span></a></li>
+<li id="menu-item-30378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30378"><a href="https://cursos.escueladecopywriting.com/cuaderno-de-notas/"><i class='fas fa-file'></i><span class='link-text'>Cuaderno de notas</span></a></li>
+<li id="menu-item-30375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30375"><a href="https://cursos.escueladecopywriting.com/glosario/"><i class='fas fa-file'></i><span class='link-text'>Glosario</span></a></li>
+<li id="menu-item-30379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30379"><a href="https://cursos.escueladecopywriting.com/bibliografia-para-todos-los-alumnos/"><i class='fas fa-file'></i><span class='link-text'>Bibliografía</span></a></li>
+<li id="menu-item-30380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30380"><a href="https://cursos.escueladecopywriting.com/otros-cursos-de-la-escuela/"><i class='fas fa-file'></i><span class='link-text'>Otros cursos</span></a></li>
+<li id="menu-item-30381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30381"><a href="https://cursos.escueladecopywriting.com/preguntas-frecuentes/"><i class='fas fa-file'></i><span class='link-text'>Preguntas frecuentes</span></a></li>
+<li id="menu-item-30382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30382"><a href="https://cursos.escueladecopywriting.com/soporte-academico/"><i class='fas fa-file'></i><span class='link-text'>Soporte académico</span></a></li>
+<li id="menu-item-30373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30373 bb-menu-section"><a><i class='fas fa-file'></i><span class='link-text'>Perfil</span></a></li>
+<li id="menu-item-30360" class="bp-menu bp-profile-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-30360"><a href="https://cursos.escueladecopywriting.com/miembros/jesus-cabrera/profile/"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-user" aria-hidden="true"></i><span>Perfil</span></a></li>
+<li id="menu-item-30361" class="bp-menu bp-notifications-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-30361"><a href="https://cursos.escueladecopywriting.com/miembros/jesus-cabrera/notifications/"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-bell" aria-hidden="true"></i><span>Notificaciones</span></a></li>
+<li id="menu-item-30362" class="bp-menu bp-logout-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-30362"><a href="https://cursos.escueladecopywriting.com/wp-login.php?action=logout&redirect_to=https%3A%2F%2Fcursos.escueladecopywriting.com%2Fcurso%2Fcertificacion-en-copywriting%2Fmodulo%2Ftutorias-grupales-iv-edicion%2Fleccion%2Ftutorias-modulo-5-6%2F&_wpnonce=ac033f1db0"><i class="_mi _before fab fa-linkedin-in buddyboss fas fa-sign-out-alt" aria-hidden="true"></i><span>Log Out</span></a></li>
 </ul>		</nav>
 
 	</div>
@@ -993,7 +994,7 @@ font-size:17px;}
 	</label>
 </form>
 		<a href="#" class="close-search">
-			<i class="bb-icon-l bb-icon-times"></i>
+			<i class="fab fa-linkedin-in fas fa-times"></i>
 			<span class="screen-reader-text">Close search</span>
 		</a>
 	</div>
@@ -1108,7 +1109,7 @@ font-size:17px;}
 				<header class="bb-model-header">
 					<h4>Report <span class="bp-reported-type"></span></h4>
 					<button title="Close (Esc)" type="button" class="mfp-close">
-						<span class="bb-icon-l bb-icon-times"></span>
+						<span class="fab fa-linkedin-in fas fa-times"></span>
 					</button>
 				</header>
 				<div class="bp-feedback bp-feedback-v2 error" id="notes-error" style="display: none;">
@@ -1189,7 +1190,7 @@ font-size:17px;}
 					<header class="bb-model-header">
 						<h4>Block Member?</h4>
 						<button title="Close (Esc)" type="button" class="mfp-close">
-							<span class="bb-icon-l bb-icon-times"></span>
+							<span class="fab fa-linkedin-in fas fa-times"></span>
 						</button>
 					</header>
 
@@ -1232,7 +1233,7 @@ font-size:17px;}
 					<h4>
 						Report <span class="bp-reported-type"></span>					</h4>
 					<button title="Close (Esc)" type="button" class="mfp-close">
-						<span class="bb-icon-l bb-icon-times"></span>
+						<span class="fab fa-linkedin-in fas fa-times"></span>
 					</button>
 				</header>
 
@@ -1250,7 +1251,7 @@ font-size:17px;}
 				<a class="action-close primary">
 					<span class="bb-for-desktop">Clear</span>
 					<span class="bb-for-mobile">Clear All</span>
-					<span class="dashicons dashicons-no" aria-hidden="true"></span>
+					<span class="dashicons fas fa-times" aria-hidden="true"></span>
 				</a>
 			</div>
 		</div>
